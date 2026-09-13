@@ -3,7 +3,6 @@
   imports = [
     ./lualine.nix
     ./mini.nix
-    ./txm.nix
     # ./live-preview.nix
     ./alpha.nix
   ];
@@ -48,26 +47,6 @@
 
     # indent guides
     visuals.indent-blankline.enable = true;
-
-    # discord rpc
-    presence.cord-nvim = {
-      enable = isMaximal;
-      setupOpts = {
-        buttons = {
-          label = "View Repository";
-          url = lib.generators.mkLuaInline ''
-            function(opts)
-              return opts.repo_url -- only show the button if a repo URL is found
-            end,
-          '';
-        };
-        display = {
-          theme = "default";
-          flavor = "accent";
-          view = "asset";
-        };
-      };
-    };
 
     # highlighting colours
     ui.colorizer = {

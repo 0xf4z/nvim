@@ -57,7 +57,6 @@ Enabled only when `maximal`:
 
 | Name | Function |
 | --- | --- |
-| [cord.nvim](https://github.com/vyfor/cord.nvim) | Discord presence |
 | [live-preview.nvim](https://github.com/brianhuster/live-preview.nvim) | Markdown/HTML preview |
 | [typst-preview.nvim](https://github.com/chomosuke/typst-preview.nvim) | Typst preview |
 | [txm.nvim](https://github.com/rv178/txm.nvim) | LaTeX preview |
